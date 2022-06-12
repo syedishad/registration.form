@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <fieldset>
+      <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+        <label id="name-label">Enter Your Name: <input id="name" type="text"  placeholder="enter your name"  required></label>
+ <label id="email-label">Enter Your Email: <input id="email" type="email"placeholder="enter your email" required></label>
+  <label id="number-label">Enter Your age: <input id="number" type="number"  min="8" max="40"placeholder=" age"    required></label>
+  <label>which course you are studying?
+          <select id="dropdown">
+            <option value="">select course</option>
+            <option value="1">computer science engineering</option>
+            <option value="2">mechanical engineering</option>
+            <option value="3">civil engineering</option>
+            <option value="4">electrical engineering</option>
+          </select>
+        </label>
+        </form>
+    </fieldset>
+    <fieldset>
+      <form id="survey-form">
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label><input type="radio" name="survey-form" value="Definitely" class="check"/> Definitely</label>
+        <label><input type="radio" name="survey-form" value="Maybe" class="check"/>Maybe </label>
+         <label><input type="radio" name="survey-form"  value="Not sure" class="check"/> Not sure</label>
+         </form>
+         </fieldset>
+    <fieldset>
+      <form id="survey-form">
+         <legend >What would you like to see learn:</legend>
+    <input type="checkbox" id="checked" name="Front-end Projects" class="checkbox"  value="front-end"checked>
+      <label for="Front-end Projects">Front-end Projects</label>
+       <input type="checkbox" id="checked" name="Back-end Projects" class="checkbox" value="back-end"checked >
+      <label for="Back-end Projects">Back-end Projects</label>
+       <input type="checkbox" id="checked" name="full-stack developer" class="checkbox" value="full-stack" checked>
+      <label for="full-stack developer">full-stack developer</label>
+     </form>
+    </fieldset>
+    <fieldset>
+      <form id="survey-form">
+           <label>Any comments or suggestions?
+          <textarea name="bio" rows="3" cols="30" placeholder="enter your comment here..."></textarea>
+			  </label>
+        </form>
+    </fieldset>
+    <fieldset>
+      <form id="survey-form">
+      <input id="submit" type="submit" value="Submit"
+      </form>
+    </fieldset>
+    </body>
+</html>
